@@ -1,0 +1,117 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  }
+  
+  body {background: linear-gradient(to bottom right, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee);
+    
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  /* Page layout */
+  .page {
+    text-align: center;
+    padding: 70px;
+    max-width: 90%;
+    width: 5000px;
+    background: linear-gradient(to bottom right, #5149c2, #f09177, #fc4bca, #3177f0);
+    border-radius: 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .title {
+    font-size: 28px;
+    color: #ff3399;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 12px 20px;
+    font-size: 18px;
+    border: 2px solid #f771b4;
+    border-radius: 10px;
+    outline: none;
+    width: 80%;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    font-size: 18px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background-color: #ff1493;
+  }
+  
+  /* Typing message box */
+  .message-box {
+    font-size: 20px;
+    color: #000000;
+    padding: 20px;
+    background: linear-gradient(to bottom right, #f07176, #fad0c4, #fbc2eb, #649af7);
+    border: 2px dashed #ff0095;
+    border-radius: 15px;
+    min-height: 200px;
+  }
+  
+  /* Photo page */
+  .happyText {
+    font-size: 20px;
+    color: #ffee00;
+    margin-bottom: 20px;
+    animation: bounce 1.2s infinite; 
+  }
+  
+  .photo-ring {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+    animation: spin 20s linear infinite;
+  } 
+  .photo-ring img {
+    position:absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 1000%;
+    object-fit: cover;
+    border: 3px solid rgb(236, 0, 79);
+    box-shadow: 0 0 8px rgb(245, 242, 242);
+  }
+  
+  /* We'll place these images in a circular orbit using JS later */
+  
+  /* Animations */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(-3px);
+    }
+    50% {
+      transform: translateY(3px);
+    }
+  }
+  
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  

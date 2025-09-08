@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Laksha 🎉</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Page 1: Ask for Sweet Name -->
+  <div class="page" id="namePage">
+    <h1 class="title">Enter Your Sweet Name 💖</h1>
+    <input type="text" id="nameInput" placeholder="Type here..." />
+    <button onclick="startWish()">Start</button>
+  </div>
+
+  <!-- Page 2: Typing Animation Message -->
+  <div class="page hidden" id="wishPage">
+    <div class="message-box">
+      <p id="typingText"></p>
+    </div>
+  </div>
+
+  <!-- Page 3: Rotating Photo Ring -->
+  <div class="page hidden" id="photoPage">
+    <h1 class="happyText">🎂 Happy Birthday Laksha 🎂</h1>
+    <div class="photo-ring">
+      <!-- We will add images later -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <audio id="bg-music" loop>
+    <source src="laksha.mp3" type="audio/mp3" />
+  </audio>
+  
+</body>
+</html>
