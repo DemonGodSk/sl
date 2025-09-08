@@ -109,38 +109,3 @@
       transform: translateY(3px);
     }
   }
-body {
-    text-align: center;
-    font-family: Arial, sans-serif;
-    background-color: #ffe0f0;
-    color: #333;
-    padding: 20px;
-}
-
-input {
-    width: 80%;
-    max-width: 300px;
-    padding: 10px;
-    margin: 10px;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: pink;
-    border: none;
-    font-size: 1em;
-    cursor: pointer;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-  
-  @keyframes spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-  }
-
-  
